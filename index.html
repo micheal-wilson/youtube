@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>YouTube</title>
+    <link rel="shortcut icon" href="./img/favicon_144x144_v2.png">
+</head>
+
+<body class=" font-sans h-screen w-full relative">
+    <header class="h-16 w-full fixed top-0 left-0 right-0 z-40 bg-white/85 backdrop-blur-md">
+        <nav class="flex justify-between">
+            <div class="flex ml-5 gap-3 items-center">
+                <div class="hover:bg-gray-200 hover:rounded-full w-10 h-10 items-center flex justify-center ">
+                    <svg class="w-7 h-7 stroke-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path fill="none" stroke-linecap="round" stroke-width="1.6" d="M5 6h14M5 12h14M5 18h14" />
+                    </svg>
+                </div>
+                <div class=" flex items-center gap-1.5 w-33">
+                    <img class="h-8 w-8" src="./img/favicon_144x144_v2.png" alt="logo">
+                    <h2 class=" text-lg font-medium">YouTube
+                        <span class="align-super font-light text-xs">NG</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="flex items-center gap-7">
+                <div class="p-3 align-middle flex items-center">
+                    <input class="inline border border-gray-400 focus:outline-blue-700 min-w-32 max-sm:hidden lg:w-md h-10 px-3 rounded-l-3xl"
+                        type="search" placeholder="Search">
+                    <button>
+                        <svg class="border border-gray-400 max-sm:border-none max-lg:bg-white bg-gray-50 lg:hover:bg-gray-200 transition-colors rounded-r-3xl px-4 h-10 w-16"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.2"
+                                d="M19 11.5a7.5 7.5 0 1 1-15 0a7.5 7.5 0 0 1 15 0m-2.107 5.42l3.08 3.08" />
+
+                        </svg>
+                    </button>
+                </div>
+                <div
+                    class="hover:bg-gray-200 bg-gray-100 rounded-full hover:rounded-full w-10 h-10 flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M12 23v-3m0 0a8 8 0 0 1-8-8m8 8a8 8 0 0 0 8-8m-8 5c-2.75 0-5-2.172-5-4.828V5.828C7 3.172 9.25 1 12 1s5 2.172 5 4.828v6.344C17 14.828 14.75 17 12 17" />
+                    </svg>
+                </div>
+            </div>
+            <div class="flex gap-6 mr-6 items-center">
+                <div class=" rounded-4xl flex h-9 items-center w-fit gap-2 p-2 bg-gray-100 hover:bg-gray-200 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="M12 4a1 1 0 0 1 1 1v6h6a1 1 0 0 1 0 2h-6v6a1 1 0 0 1-2 0v-6H5a1 1 0 0 1 0-2h6V5a1 1 0 0 1 1-1" />
+                    </svg>
+                    <h3 class="">Create</h3>
+                </div>
+                <div class="hover:bg-gray-200 hover:rounded-full max-sm:hidden w-10 h-10 flex justify-center items-center">
+                    <svg class="h-9 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.3"
+                            d="M15.5 18a3.5 3.5 0 1 1-7 0m10.731 0H4.77a1.769 1.769 0 0 1-1.25-3.02l.602-.603A3 3 0 0 0 5 12.256V9.5a7 7 0 0 1 14 0v2.756a3 3 0 0 0 .879 2.121l.603.603a1.77 1.77 0 0 1-1.25 3.02" />
+                    </svg>
+                </div>
+                <svg class="h-9 w-7 max-sm:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3">
+                        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2" />
+                        <path
+                            d="M4.271 18.346S6.5 15.5 12 15.5s7.73 2.846 7.73 2.846M12 12a3 3 0 1 0 0-6a3 3 0 0 0 0 6" />
+                    </g>
+                </svg>
+            </div>
+        </nav>
+    </header>
+    <section class="flex h-full w-full mt-16 relative">
+        <aside class=" w-1/5 max-lg:w-1/6 max-sm:hidden overflow-y-auto  fixed bottom-0 top-16 left-0 bg-white ">
+            <div class="mb-3">
+                <div
+                    class="hover:bg-gray-200 mx-3 mt-2 rounded-md h-9 flex max-lg:flex-col max-lg:items-center max-lg:gap-y-2.5 max-lg:gap-0 max-lg:h-14 gap-2 items-center pl-2.5">
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="2048" height="2048"
+                        viewBox="0 0 2048 2048">
+                        <path fill="#000"
+                            d="m1024 165l941 942l-90 90l-83-82v805h-640v-640H896v640H256v-805l-83 82l-90-90zm640 1627V987l-640-640l-640 640v805h384v-640h512v640z" />
+
+                    </svg>
+                    <p class="capitalize ">home</p>
+                </div>
+                <div
+                    class="hover:bg-gray-200 mx-3 mt-2 rounded-md h-9 flex gap-2 items-center pl-2.5 max-lg:flex-col max-lg:items-center max-lg:gap-y-2.5 max-lg:gap-0 max-lg:h-14">
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none">
+                            <path stroke="#000" stroke-linejoin="round" stroke-width="1.5"
+                                d="M12.834 3.186a3.627 3.627 0 0 1 3.627 6.282l-.74.426a3.626 3.626 0 0 1 1.935 6.766l-7.02 4.053a3.626 3.626 0 1 1-3.627-6.28l.739-.428A3.627 3.627 0 0 1 5.814 7.24z" />
+                            <path fill="#000"
+                                d="M13.992 11.016L11.2 9.271c-.74-.463-1.7.07-1.7.942v3.49c0 .873.96 1.405 1.7.943l2.792-1.746a1.11 1.11 0 0 0 0-1.884" />
+                        </g>
+                    </svg>
+                    <p class="capitalize ">shorts</p>
+                </div>
+                <div
+                    class="hover:bg-gray-200 mx-3 mt-2  rounded-md h-9 flex gap-2 items-center pl-2.5 max-lg:flex-col max-lg:items-center max-lg:gap-0 max-lg:h-14 max-lg:gap-y-2.5">
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="1">
+                            <path stroke-linecap="round" d="M10 14V8l5.5 3z" />
+                            <path d="M21.5 4h-19a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h19a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Z" />
+                            <path stroke-linecap="round" d="M7 20.5h10" />
+                        </g>
+                    </svg>
+                    <p class="capitalize ">subscriptions</p>
+                </div>
+                <div class="lg:hidden flex justify-center flex-col items-center max-lg:gap-y-2.5">
+                    <svg class="h-9 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3">
+                            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2" />
+                            <path
+                                d="M4.271 18.346S6.5 15.5 12 15.5s7.73 2.846 7.73 2.846M12 12a3 3 0 1 0 0-6a3 3 0 0 0 0 6" />
+                        </g>
+                    </svg>
+                    <p>You</p>
+                </div>
+            </div>
+            <hr class="border-gray-300  max-lg:border-white">
+            <div class="mt-3 mb-3 max-lg:hidden">
+                <h2 class="mx-6.5 capitalize font-bold text-slate-700 mb-3">you ></h2>
+                <div class="hover:bg-gray-200 mx-3  rounded-md h-9 flex gap-2 items-center pl-2.5 ">
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89l.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7s-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.95 8.95 0 0 0 13 21a9 9 0 0 0 0-18m-1 5v5l4.25 2.52l.77-1.28l-3.52-2.09V8z" />
+                    </svg>
+
+                    <p class="capitalize ">history</p>
+                </div>
+                <div class="hover:bg-gray-200 mx-3 rounded-md h-9 flex gap-2 items-center pl-2.5">
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="M20 5.245H4a.75.75 0 0 1 0-1.5h16a.75.75 0 1 1 0 1.5m0 6H4a.75.75 0 1 1 0-1.5h16a.75.75 0 1 1 0 1.5m-8 6H4a.75.75 0 1 1 0-1.5h8a.75.75 0 1 1 0 1.5m8.72-1c.002.21-.039.417-.12.61a1.4 1.4 0 0 1-.38.47l-3.38 2.67c-.19.15-.42.24-.66.26h-.13a1.3 1.3 0 0 1-.57-.13a1.4 1.4 0 0 1-.52-.47a1.3 1.3 0 0 1-.2-.68v-4.98a1.35 1.35 0 0 1 .68-1.13a1.3 1.3 0 0 1 .67-.15c.232.008.457.081.65.21l3.41 2.28a1.28 1.28 0 0 1 .58 1z" />
+                    </svg>
+
+                    <p class="capitalize ">playlist</p>
+                </div>
+                <div class="hover:bg-gray-200 mx-3 rounded-md h-9 flex gap-2 items-center pl-2.5">
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                            <path d="M12 6v6h6" />
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10" />
+                        </g>
+                    </svg>
+
+                    <p class="capitalize ">watch later</p>
+                </div>
+                <div class="hover:bg-gray-200 mx-3 rounded-md h-9 flex gap-2 items-center pl-2.5">
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"
+                        viewBox="0 0 1024 1024">
+                        <path fill="#000"
+                            d="M608.544 1023.744c-290.832 0-293.071-12.062-329.087-39.183c-19.104-14.368-55.151-24.32-186.815-32.896c-9.552-.624-18.64-4.288-24.735-11.68c-2.8-3.408-68.592-99.36-68.592-253.04c0-151.44 47.088-220.465 49.103-223.665a31.97 31.97 0 0 1 27.12-15.04c108.112 0 257.984-138 358.736-378.896C451.698 27.68 455.298.272 519.298.272c36.4 0 77.2 26.064 97.344 59.505c41.328 68.32 20.335 215.057.927 293.473c66-.528 185.472-1.425 242.32-1.425c79.072 0 131.407 47.152 132.991 116.08c.529 22.752-2.464 51.808-9.04 66.848c17.408 17.36 39.857 43.536 40.832 77.248c1.216 43.52-27.28 76.655-45.472 95.663c4.175 12.656 12.527 29.44 11.71 49.505c-2 49.344-40.095 81.136-63.823 97.727c1.968 13.504 3.504 38.976-.832 58.672c-17.12 78.609-132.4 110.177-317.712 110.177zM109.617 886.77c114.688 9.489 175.998 22.336 208.334 46.672c25.024 18.848 21.168 26.32 290.592 26.32c82.176 0 242.896-3.424 255.216-59.84c4.896-22.56-18.895-44.735-18.976-44.911c-6.496-16.032.737-34.849 16.577-41.777c.255-.128 64.143-23.007 65.6-58.72c.96-22.831-14.72-36.543-15.072-37.12c-9.328-14.463-5.92-34.303 8.224-44.16c.16-.128 41.551-25.215 40.543-59.423c-.784-27.168-36.576-46.289-37.664-46.928c-8-4.576-13.824-12.496-15.648-21.552c-1.792-9.04.224-18.528 5.84-25.872c0 0 16.272-25.856 15.68-50.112c-1.168-51.92-57.007-53.552-68.992-53.552c-80.72 0-288.03.816-288.03.816c-11.184.048-20.864-5.232-26.88-14.176c-6-8.945-6.448-20.048-2.928-30.224c31.263-90.032 48.72-231.28 19.727-279.536c-8.544-14.224-10.496-28.432-42.496-28.432c-4.432 0-14.991 3.504-25.999 29.744c-106.928 255.84-266.64 403.824-397.456 417.168c-11.28 25.728-32.496 79.04-32.496 175.775c0 98.737 31.28 175.12 46.305 199.84z" />
+                    </svg>
+
+                    <p class="capitalize ">liked video</p>
+                </div>
+                <div class="hover:bg-gray-200 mx-3 rounded-md h-9 flex gap-2 items-center pl-2.5">
+                    <svg class="h-7 w-8" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.6" d="M16 22V5M9 16l7 7l7-7M9 27h14" />
+                    </svg>
+
+                    <p class="capitalize ">
+                        downloads
+                    </p>
+                </div>
+            </div>
+            <hr class="border-gray-300 max-lg:border-white">
+            <div class="mt-3 mb-3 max-lg:hidden">
+                <h2 class="mx-6.5 capitalize font-bold text-slate-700 my-3">Explore</h2>
+                <div class="hover:bg-gray-200 mx-3  rounded-md h-9 flex gap-2 items-center pl-2.5">
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="M11.513 2.048a.75.75 0 0 0-1.013.702v12.127a4 4 0 1 0 1.476 3.56a.8.8 0 0 0 .024-.187V8.832l6.987 2.62A.75.75 0 0 0 20 10.75V7.483a3.25 3.25 0 0 0-2.109-3.044zM10.5 18a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m8-8.332L12 7.23V3.832l5.365 2.012A1.75 1.75 0 0 1 18.5 7.483z" />
+                    </svg>
+
+                    <p class="capitalize ">music</p>
+                </div>
+                <div class="hover:bg-gray-200 mx-3 rounded-md h-9 flex gap-2 items-center pl-2.5">
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="1">
+                            <path
+                                d="M18.5 9.5a.5.5 0 0 1 0-1m0 1a.5.5 0 0 0 0-1M16 11a.5.5 0 0 1 0-1m0 1a.5.5 0 0 0 0-1M6.75 7.5V12M4.5 9.75H9" />
+                            <path d="m1.5 7l5-2.5L12 7l5.5-2.5l5 2.5v5.5L12 18L1.5 12.5z" />
+                        </g>
+                    </svg>
+
+                    <p class="capitalize ">gaming</p>
+                </div>
+                <div class="hover:bg-gray-200 mx-3 rounded-md h-9 flex gap-2 items-center pl-2.5">
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="M4.616 20q-.691 0-1.153-.462T3 18.384V5.616q0-.691.463-1.153T4.615 4h14.77q.69 0 1.152.463T21 5.616v12.769q0 .69-.463 1.153T19.385 20zm0-1h14.769q.23 0 .423-.192t.192-.424V5.616q0-.231-.192-.424T19.385 5H4.615q-.23 0-.423.192T4 5.616v12.769q0 .23.192.423t.423.192m2.654-2.77h9.462q.213 0 .356-.142t.144-.357t-.144-.357t-.356-.143H7.269q-.213 0-.357.143t-.143.357t.143.357t.357.143m0-3.731h2.385q.213 0 .356-.143t.144-.357V8.27q0-.214-.143-.358t-.357-.143H7.269q-.213 0-.356.143t-.144.357V12q0 .214.143.357t.357.143m5.77 0h3.692q.213 0 .356-.143t.144-.357t-.144-.357t-.356-.143h-3.693q-.213 0-.356.143t-.143.357t.143.357t.357.143m0-3.73h3.692q.213 0 .356-.144t.144-.357t-.144-.357t-.356-.143h-3.693q-.213 0-.356.143t-.144.357t.144.357t.356.143M4 19V5z" />
+                    </svg>
+
+                    <p class="capitalize ">news</p>
+                </div>
+                <div class="hover:bg-gray-200 mx-3 rounded-md h-9 flex gap-2 items-center pl-2.5">
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="M7 22a4 4 0 0 1 4-4v-1a5 5 0 0 1-4.9-4H5a3 3 0 0 1-3-3V5h2c.77 0 1.47.29 2 .76V3h11v2.76c.53-.47 1.23-.76 2-.76h2v5a3 3 0 0 1-3 3h-1.1a5 5 0 0 1-4.9 4v1a4 4 0 0 1 4 4zm5-3h-1c-1.31 0-2.42.83-2.83 2h6.66A2.99 2.99 0 0 0 12 19m4-15H7v8a4 4 0 0 0 4 4h1a4 4 0 0 0 4-4zm4 6V6h-1a2 2 0 0 0-2 2v4h1a2 2 0 0 0 2-2M3 10a2 2 0 0 0 2 2h1V8a2 2 0 0 0-2-2H3z" />
+                    </svg>
+
+                    <p class="capitalize ">sports</p>
+                </div>
+            </div>
+            <hr class="border-gray-300  max-lg:border-white">
+            <div class="mt-3 mb-3 max-lg:hidden">
+                <h2 class="mx-6.5 capitalize font-bold text-slate-700 my-3">more from youtube</h2>
+                <div class="hover:bg-gray-200 mx-3  rounded-md h-9 flex gap-2 items-center pl-2.5">
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="M23 9.71a8.5 8.5 0 0 0-.91-4.13a2.92 2.92 0 0 0-1.72-1A78 78 0 0 0 12 4.27a79 79 0 0 0-8.34.3a2.87 2.87 0 0 0-1.46.74c-.9.83-1 2.25-1.1 3.45a48 48 0 0 0 0 6.48a9.6 9.6 0 0 0 .3 2a3.14 3.14 0 0 0 .71 1.36a2.86 2.86 0 0 0 1.49.78a45 45 0 0 0 6.5.33c3.5.05 6.57 0 10.2-.28a2.9 2.9 0 0 0 1.53-.78a2.5 2.5 0 0 0 .61-1a10.6 10.6 0 0 0 .52-3.4c.04-.56.04-3.94.04-4.54M9.74 14.85V8.66l5.92 3.11c-1.66.92-3.85 1.96-5.92 3.08" />
+                    </svg>
+
+                    <p class="capitalize ">youtube premium</p>
+                </div>
+                <div class="hover:bg-gray-200 mx-3 rounded-md h-9 flex gap-2 items-center pl-2.5">
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#000" fill-rule="evenodd"
+                            d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12S5.925 1 12 1s11 4.925 11 11M12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10m-6 5a6 6 0 1 1 12 0a6 6 0 0 1-12 0m9 0l-5-3v6z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                    <p class="capitalize ">youtube music</p>
+                </div>
+                <div class="hover:bg-gray-200 mx-3 rounded-md h-9 flex gap-2 items-center pl-2.5">
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#000"
+                            d="m23.99 13.543l-.007-.288c-.015-1.122-.645-6.495-.999-7.457c-.41-1.111-.974-1.945-1.675-2.48c-1.143-.873-2.115-1.063-3.313-1.087h-.03c-.51 0-3.848.415-6.642.801c-2.797.387-6.303.915-7.14 1.227c-1.153.432-2.07.997-2.796 1.728C.05 7.332-.113 8.731.054 10.553c.13 1.412.875 6.975 1.302 8.248c.574 1.717 1.694 2.75 3.154 2.909c.36.039.704.059 1.045.059c1.28 0 2.295-.278 3.47-.598c1.848-.505 4.147-1.13 8.893-1.13h.14c1.162 0 4.008-.263 5.303-2.687c.693-1.297.652-2.87.629-3.811m-7.719-1.67l-.105.066q-.411.278-.819.563l-4.298 2.975c-.27.21-.748.521-1.016.521a.24.24 0 0 1-.107-.024c-.226-.12-.303-.94-.356-1.34l-.011-.087c-.065-.478-.594-5.035-.654-5.535c-.017-.142-.105-.663.055-.781c.05-.037.12-.05.2-.05c.195 0 .442.083.549.118c.845.272 5.083 1.774 6.4 2.448q.057.03.122.057c.188.08.446.192.452.51c.004.304-.225.446-.412.56z" />
+                    </svg>
+
+                    <p class="capitalize">youtube kids</p>
+                </div>
+            </div>
+            <hr class="border-gray-300  max-lg:border-white">
+            <div class="hover:bg-gray-200 mx-3 rounded-md h-9 my-3 flex gap-2 items-center pl-2.5 max-lg:hidden">
+                <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M4 21v-5.313m0 0c5.818-4.55 10.182 4.55 16 0V4.313c-5.818 4.55-10.182-4.55-16 0z" />
+                </svg>
+
+                <p class="capitalize ">
+                    report history
+                </p>
+            </div>
+            <hr class="border-gray-300  max-lg:border-white">
+            <div class="max-lg:hidden">
+                <div class="flex flex-wrap gap-x-1.5 mx-3 my-3 ">
+                    <p class="capitalize font-semibold text-slate-600">about</p>
+                    <p class="capitalize font-semibold text-slate-600">press</p>
+                    <p class="capitalize font-semibold text-slate-600">copyright</p>
+                    <p class="capitalize font-semibold text-slate-600">contact us</p>
+                    <p class="capitalize font-semibold text-slate-600">creators</p>
+                    <p class="capitalize font-semibold text-slate-600">advertise</p>
+                    <p class="capitalize font-semibold text-slate-600">developers</p>
+                </div>
+                <div class="flex flex-wrap gap-x-1.5 mx-3 my-3">
+                    <p class="capitalize font-semibold text-slate-600">terms</p>
+                    <p class="capitalize font-semibold text-slate-600">terms</p>
+                    <p class="capitalize font-semibold text-slate-600">privacy</p>
+                    <p class="capitalize font-semibold text-slate-600">policy & safety </p>
+                    <p class="capitalize font-semibold text-slate-600">test how youtube works</p>
+                    <p class="capitalize font-semibold text-slate-600">new features</p>
+
+                </div>
+                <div class="mx-3 my-3">
+                    <p class="capitalize font-semibold text-slate-600">
+                        © 2026 Google LLC
+                    </p>
+                </div>
+            </div>
+        </aside>
+        <main class=" w-full px-7 pt-1.5 ml-70 max-lg:ml-35 max-sm:ml-0">
+            <section class="flex justify-between">
+                <div class="flex gap-2 max-lg:overflow-hidden">
+                    <div class="rounded-lg bg-black w-fit px-2 h-8 flex justify-center items-center">
+                        <p class="text-white capitalize font-medium">All</p>
+                    </div>
+                    <div class="rounded-lg bg-gray-200 w-fit px-2 h-8 flex justify-center items-center">
+                        <p class="capitalize font-medium">shorts</p>
+                    </div>
+                    <div class="rounded-lg bg-gray-200 w-fit px-2 h-8 flex justify-center items-center">
+                        <P class="capitalize font-medium">
+                            Unwatched
+                        </P>
+                    </div>
+                    <div class="rounded-lg bg-gray-200 w-fit px-2 h-8 flex justify-center items-center">
+                        <p class="capitalize font-medium">watched</p>
+                    </div>
+                    <div class="rounded-lg bg-gray-200 w-fit px-2 h-8 flex justify-center items-center">
+                        <p class="capitalize font-medium">
+                            videos
+                        </p>
+                    </div>
+                    <div class="rounded-lg bg-gray-200 w-fit px-2 h-8 flex justify-center items-center  ">
+                        <p class="capitalize font-medium">
+                            recently updated
+                        </p>
+                    </div>
+                    <div class="rounded-lg bg-gray-200 w-fit px-2 h-8 flex justify-center items-center">
+                        <p class="capitalize font-medium">
+                            live
+                        </p>
+                    </div>
+                </div>
+                <div class=" hover:bg-gray-200 hover:rounded-4xl w-fit px-3 flex justify-center items-center">
+                    <p class="capitalize font-medium">filters</p>
+                    <svg class="h-6 w-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" stroke="#000" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7h3M3 17h6m9 0h3M15 7h6" />
+                            <path
+                                d="M6 7c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.083-1.083C7.602 4 8.068 4 9 4s1.398 0 1.765.152a2 2 0 0 1 1.083 1.083C12 5.602 12 6.068 12 7s0 1.398-.152 1.765a2 2 0 0 1-1.083 1.083C10.398 10 9.932 10 9 10s-1.398 0-1.765-.152a2 2 0 0 1-1.083-1.083C6 8.398 6 7.932 6 7Zm6 10c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.083-1.083C13.602 14 14.068 14 15 14s1.398 0 1.765.152a2 2 0 0 1 1.083 1.083C18 15.602 18 16.068 18 17s0 1.398-.152 1.765a2 2 0 0 1-1.083 1.083C16.398 20 15.932 20 15 20s-1.398 0-1.765-.152a2 2 0 0 1-1.083-1.083C12 18.398 12 17.932 12 17Z" />
+                        </g>
+                    </svg>
+
+                </div>
+            </section>
+            <div class="grid grid-cols-10 gap-4 mt-4 grid-rows-4 h-full w-full ">
+                <div class="rounded-xl col-span-10 row-span-2 flex justify-between gap-1">
+                    <div class="w-1/2 h-full">
+                        <iframe class="rounded-xl w-full h-full" width="855" height="481"
+                            src="https://www.youtube.com/embed/8KPJ5O_wYac"
+                            title="WARHAMMER 40K Titus Full Movie (2024) 4K ULTRA HD Action" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="w-1/2 pl-1.5">
+                        <h2 class="text-lg font-semibold text-gray-800">
+                            WARHAMMER 40K Titus Full Movie (2024) 4K ULTRA HD Action
+                        </h2>
+                        <p>GameClips</p>
+
+                        <p>WARHAMMER 40K Full Movie Cinematic (2024) 4K ULTRA HD Action New Clips 2024! </p>
+                    </div>
+                </div>
+                <div class="rounded-xl col-span-10 row-span-2 flex justify-between gap-1">
+                    <div class="w-1/2">
+                        <iframe class="rounded-xl w-full h-full" width="855" height="481"
+                            src="https://www.youtube.com/embed/e9W_tkeo8ek"
+                            title="WARHAMMER 40K Full Movie (2026) 4K ULTRA HD Action Fantasy" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="w-1/2 pl-1.5">
+                        <h2 class="text-lg font-semibold text-gray-800">
+                            WARHAMMER 40K Full Movie (2026) 4K ULTRA HD Action Fantasy
+                        </h2>
+                        <p>
+                            GameClips
+                        </p>
+
+
+                    </div>
+                </div>
+                <!-- <div class="border rounded-xl">home</div>
+                <div class="border rounded-xl">home</div>
+                <div class="border rounded-xl">home</div>
+                <div class="border rounded-xl">home</div> -->
+            </div>
+        </main>
+
+    </section>
+</body>
+
+</html>
